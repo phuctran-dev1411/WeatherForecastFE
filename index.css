@@ -1,0 +1,103 @@
+body {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    max-width: 400px;
+}
+
+.search input {
+    border: 0; outline: 0;
+    background: #ebfffc;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    width: 70%;
+}
+
+.weather-icon {
+    width: 120px;
+    margin-top: 30px;
+}
+
+.temp { font-size: 60px; font-weight: 500; }
+.city { font-size: 35px; font-weight: 400; margin-top: -10px; }
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+/* Các CSS cũ giữ nguyên, thêm phần bên dưới */
+
+.forecast-container {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 20px;
+    text-align: left;
+}
+
+.forecast-container h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.forecast-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    padding-bottom: 10px;
+}
+
+/* Ẩn thanh cuộn cho đẹp (tuỳ chọn) */
+.forecast-list::-webkit-scrollbar {
+    height: 6px;
+}
+.forecast-list::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.forecast-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 15px;
+    min-width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forecast-item img {
+    width: 50px;
+    margin: 10px 0;
+}
+
+.forecast-item .day {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forecast-item .f-temp {
+    font-size: 18px;
+    font-weight: bold;
+}
