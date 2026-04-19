@@ -1,0 +1,23 @@
+body {
+  background-color: #f8f9fa;
+}
+.stats-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 25px;
+  background: #fff;
+  padding: 20px;
+}
+.chart-container {
+  position: relative;
+  height: 350px;
+  width: 100%;
+}
+.location-banner {
+  background: #2c3e50;
+  color: #fff;
+  padding: 40px 0;
+  margin-bottom: 30px;
+  border-radius: 0 0 25px 25px;
+}
